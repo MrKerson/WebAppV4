@@ -46,7 +46,7 @@ namespace WebAppV4.Controllers
                     {
                         // путь к папке Files
                         string path = "/Files/" + uploadedFile.FileName;
-                        string pathfile = "C:/Users/Alex/Desktop/Sites/Практика/WebSiteV4/wwwroot/Files/" + uploadedFile.FileName;
+                        string pathfile = "D:/Практика/WebAppV4/WebAppV4/wwwroot/wwwroot/Files/" + uploadedFile.FileName;
                     // сохраняем файл в папку Files в каталоге wwwroot
                     using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
                     {
