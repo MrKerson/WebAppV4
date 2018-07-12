@@ -1,0 +1,15 @@
+﻿@model WebAppV4.Models.Text.TextModel
+@{
+    ViewData["Title"] = "Набор текста";
+}
+<h2>@ViewData["Title"]</h2>
+<div asp-validation-summary="All"></div>
+<form asp-action="ReadText" asp-controller="Home" asp-antiforgery="true">
+    <div>
+        <label>Число</label>  <br />
+        <input type="text" asp-for="Num" />
+        <label>Название</label>  <br />
+        <input type="text" asp-for="Text" />
+    </div>
+    <input type="submit" value="Отправить" />
+</form>

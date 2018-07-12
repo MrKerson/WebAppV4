@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using WebAppV4.Models.File;
+using WebAppV4.Models.Text;
 
 namespace WebAppV4
 {
@@ -21,6 +24,9 @@ namespace WebAppV4
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //string connection = Configuration.GetConnectionString("FileV4DB");
+            //services.AddDbContext<FileContext>(options => options.UseSqlServer(connection));
+
             services.AddMvc();
         }
 
